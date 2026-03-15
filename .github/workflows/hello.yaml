@@ -1,11 +1,10 @@
 name: Hello
 
-on: push
+on:
+  push:
+    branches-ignore:
+      - "**"
 
-  # push:
-  #    branches-ignore:
-  #      - "**"
-  
 jobs:
   hello:
     runs-on: ubuntu-latest
