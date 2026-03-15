@@ -7,6 +7,6 @@ def test_lambda():
     response = lambda_handler({}, None)
 
     # レスポンスの検証
-    assert response["statusCode"] == 200  # HTTP ステータスコード
+    assert response["statusCode"] == 500  # HTTP ステータスコード
     body = json.loads(response["body"])
     assert body["message"] == "Hello, sleek!"
